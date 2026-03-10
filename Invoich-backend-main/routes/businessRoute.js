@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const upload = require('../middleware/upload');
+const upload = require('../middleware/upload.js');
 const { registerBusiness, loginBusiness, getBusiness, getBusinessByID, updateBusiness, deleteBusiness, changePassword, forgotPassword, verifyOtp, resetPassword } = require('../controllers/businessController');
 const checkRole = require('../middleware/authMiddleware');
 
